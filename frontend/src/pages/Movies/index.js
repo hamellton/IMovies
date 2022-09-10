@@ -82,7 +82,7 @@ class Movies extends Component {
                 type="number"
                 iconClass="fas fa-star"
               />
-              { loggedIn && <Link to='/movies/new' className='btn btn-primary btn-block my-2 text-white'> Add Product </Link> }
+              { loggedIn && <Link to='/movies/new' className='btn btn-primary btn-block my-2 text-white'> Add Product test</Link> }
               {/* <Rating total={5} filled={rating} onChange={val => this.handleChange('rating', val)}/> */}
               
             </div>
