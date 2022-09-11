@@ -4,14 +4,14 @@
   "description": "Website for movie theaters.",
   "main": "server.js",
   "scripts": {
-    "setup": "npm install && npm run setup-frontend",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "setup": "npm install && npm run setup-nextjs",
+    "dev": "concurrently \"npm run server\" \"npm run nextjs\"",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "frontend": "cd ./frontend && npm start",
-    "setup-frontend": "cd frontend && npm install",
-    "build-frontend": "npm run setup-frontend && cd frontend && npm run build",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build-frontend"
+    "nextjs": "cd ./nextjs && npm run dev",
+    "setup-nextjs": "cd nextjs && npm install",
+    "build-nextjs": "npm run setup-nextjs && cd nextjs && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build-nextjs"
   },
   "author": "Kostya",
   "license": "MIT",
@@ -36,6 +36,7 @@
   "devDependencies": {
     "nodemon": "^1.19.4"
   },
+  "proxy": "http://localhost:5000",
   "engines": {
     "node": "10.14.2"
   }
