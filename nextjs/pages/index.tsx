@@ -1,4 +1,4 @@
-export default function IndexPage() {
+export default function IndexPage(props) {
   return (
     <div variant="container" textAlign="center" py="20">
       <h1 variant="heading.h1">
@@ -12,4 +12,15 @@ export default function IndexPage() {
       </a>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const fetchMovies = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/genres`)
+  const movies = await fetchMovies.json()
+
+  return {
+      props: {
+        movies
+      }
+  }
 }
