@@ -1,15 +1,225 @@
 export default function IndexPage() {
   return (
-    <div variant="container" textAlign="center" py="20">
-      <h1 variant="heading.h1">
-        Welcome to <span color="primary">Reflexjs</span>
-      </h1>
-      <p fontSize="xl" my="4">
-        Get started by editing <code variant="text.code">pages/index.jsx</code>
-      </p>
-      <a href="https://reflexjs.org/docs" variant="button.primary">
-        Read the docs
-      </a>
+    <div>
+      <div variant="bgdWhite" className="cartFilms">
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        <div variant="bgd" className="bgd">
+          <div>
+          <img variant="imgAssetsactualite4col1"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeLlrV7qYlzIcwfQGY96WTrz1HO1zPwTmT0s7EzNN-&s"
+              alt="img"
+            />
+          </div>
+          <div>
+          <h1 variant="LoremIpsum">Название фильма</h1>
+          </div>
+          <div>
+            <p variant="color">Описание</p>
+          </div>
+          <div variant="Rectangle"></div>
+          <div>
+           <button variant="LireLaSuite"><a href="/">Ссылка</a></button>
+          </div>
+        </div>
+        
+      </div>
     </div>
-  )
+  );
 }

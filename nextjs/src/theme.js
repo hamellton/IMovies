@@ -810,6 +810,77 @@ const theme = {
   icons: {
     logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
+
+  module4coltexteImage1440: {
+    width: "1439px",
+    height: "461px",
+    margin: "40px 0 24px 1px",
+    padding: "0 144px 0 146px",
+  },
+  
+  bgd: {
+    height: "avto",
+    width: "200px",
+    margin: "30px",
+    backgroundColor: "#f3f3f3",
+    display: "inline-block",
+    textAlign: "center"
+  },
+
+  bgdWhite: {
+    width: "1690px",
+    height: "avto",
+    margin: "0 0 20px",
+    backgroundColor: "#fff",
+  },
+
+  LoremIpsum: {
+    width: "200px",
+    height: "56px",
+    margin: "0 0 16px",
+    fontFamily: "DINEngschriftStd",
+    fontSize: "25px",
+    fontWeight: "normal",
+    fontStretch: "normal",
+    fontStyle: "normal",
+    lineHeight: "1.12",
+    letterSpacing: "normal",
+    color: "#222222"
+    },
+
+    color: {
+      color: "#212121",
+      fontFamily: "HelveticaNeue",
+    },
+
+  Rectangle: {
+    width: "45px",
+    height: "3px",
+    margin: "8px",
+    backgroundColor: "#212121",
+  },
+
+  LireLaSuite: {
+    width: "72px",
+    height: "23px",
+    margin: "16px 192px 0 0",
+    fontFamily: "AGaramondPro",
+    fontSize: "16px",
+    fontWeight: "normal",
+    fontStretch: "normal",
+    fontStyle: "normal",
+    lineHeight: "1.44",
+    letterSpacing: "normal",
+    color: "#d4565d"
+  },
+   
+  imgAssetsactualite4col1: {
+    width: "200px",
+    height: "200px",
+    margin: "0 0 -20px",
+    objectFit: "contain",
+  }
+
 }
 
 export default theme
