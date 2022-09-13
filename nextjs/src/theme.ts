@@ -1,3 +1,5 @@
+import category from "./components/Category/Category.styles"
+
 const theme = {
   useRootStyles: true,
   initialColorModeName: "light",
@@ -462,59 +464,101 @@ const theme = {
     m: 0,
   },
   heading: {
-    color: "heading",
     fontFamily: "heading",
-    fontWeight: "semibold",
-    lineHeight: "tight",
-    letterSpacing: "tight",
+    color: 'heading',
+    fontWeight: 'semibold',
+    lineHeight: 'tight',
+    letterSpacing: 'tight',
 
     h1: {
-      fontSize: "5xl|6xl",
-      fontWeight: "bold",
-      lineHeight: "1.1",
+      fontWeight: 'black',
+      display: 'block',
+      position: 'relative',
+      textTransform: 'uppercase',
+      textAlign: 'center',
+      height: 55,
+      mt: '12px',
+      mb: '64px',
+      border: 0,
+      fontSize: 36,
+      letterSpacing: 3,
     },
     h2: {
-      fontSize: "3xl|4xl",
+      fontSize: '28px',
+
+      italic: {
+        fontStyle: 'italic',
+      },
     },
     h3: {
-      fontSize: "2xl",
+      fontSize: '25px',
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
+      letterSpacing: 'normal',
+      lineHeight: '1.12',
     },
     h4: {
-      fontSize: "xl",
-      letterSpacing: "normal",
+      fontSize: 'lg|xl|2xl',
     },
-    h5: {
-      fontSize: "lg",
-      fontFamily: "body",
-      letterSpacing: "normal",
+    title: {
+      variant: 'heading.h1',
+      fontSize: '4xl|5xl|6xl',
     },
-    h6: {
-      fontSize: "sm",
-      fontFamily: "body",
-      textTransform: "uppercase",
-      letterSpacing: "normal",
+  },
+
+  underline: {
+    '&:after': {
+      display: 'block',
+      content: '" "',
+      h: '4px',
+      w: '40px',
+      bg: 'black',
+      my: '18px',
+    },
+    left: {
+      '&:after': {
+        mx: 'initial',
+      },
+    },
+    center: {
+      '&:after': {
+        mx: 'auto',
+      },
+    },
+    thick: {
+      '&:after': {
+        h: '3px',
+        w: '27px',
+      },
+    },
+    noMargin: {
+      '&:after': {
+        my: 0,
+      },
+    },
+    white: {
+      '&:after': {
+        bg: 'white',
+      },
+    },
+    smallMargin: {
+      '&:after': {
+        my: '8px',
+      },
     },
   },
 
   container: {
-    px: "6|6|6|4",
-    mx: "auto",
-    maxWidth: 1280,
-
-    sm: {
-      maxWidth: 670,
-    },
+    px: '6|4|4|4',
+    maxW: 1150,
+    mx: 'auto',
 
     md: {
-      maxWidth: 768,
+      maxW: 800,
     },
 
-    lg: {
-      maxWidth: 1024,
-    },
-
-    xl: {
-      maxWidth: 1280,
+    sm: {
+      maxW: 680,
     },
   },
 
@@ -810,6 +854,7 @@ const theme = {
   icons: {
     logo: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`,
   },
+  category,
 }
 
 export default theme
