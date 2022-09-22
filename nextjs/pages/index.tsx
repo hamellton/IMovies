@@ -1,13 +1,14 @@
 import React from "react";
 import Card from "../src/components/Card";
+import { ICard } from "../src/components/Card/Card.type";
 import { CARDS, TITLE } from "../src/components/Card/HomePage.constans";
 
-interface ICard {
+interface IHomePage {
   title: string
-  cards: any
+  cards: ICard[]
 }
 
-function IndexPage(props: ICard): JSX.Element {
+function IndexPage(props: IHomePage): JSX.Element {
   const { title, cards } = props
   
   return (
@@ -23,7 +24,7 @@ function IndexPage(props: ICard): JSX.Element {
           </h1>
         
         <div variant="card.sizeCardBlock">
-          {Card.length > 0 && cards.map((el: any) => <Card card={el} />)}
+          {Card.length > 0 && cards.map((el: ICard) => <Card card={el} />)}
         </div>
       </div>
   );

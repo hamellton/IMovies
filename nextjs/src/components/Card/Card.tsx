@@ -1,6 +1,7 @@
 import React from "react";
+import { ICard } from "./Card.type";
 
-function Card({ card }: any) {
+function Card({ card }: { card: ICard}) {
   const { img, filmTitle, filmDescription, link  } = card
 
     
