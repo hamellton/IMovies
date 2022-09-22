@@ -550,7 +550,7 @@ const theme = {
 
   container: {
     px: '6|4|4|4',
-    maxW: '1150px',
+    maxW: 1150,
     mx: 'auto',
     
     

@@ -6,7 +6,7 @@ function Card({ card }: { card: ICard}) {
 
     
   return (
-      <div variant="card.sizeCard">
+      <div variant="card.card">
         
         <div variant="card.imgCard">
           <img

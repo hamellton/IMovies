@@ -23,7 +23,7 @@ function IndexPage(props: IHomePage): JSX.Element {
             {title}
           </h1>
         
-        <div variant="card.sizeCardBlock">
+        <div variant="card.cardsBlock">
           {Card.length > 0 && cards.map((el: ICard) => <Card card={el} />)}
         </div>
       </div>

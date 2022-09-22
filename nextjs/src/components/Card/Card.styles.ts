@@ -1,7 +1,7 @@
-const cardStyles = {
-  sizeCardBlock: {
+const CardsStyles = {
+  cardsBlock: {
     backroundColor: "#ffffff",
-    width: '1150px',
+    width: '100%',
     height: 'auto',
     margin: '40px auto',
     display: 'flex',
@@ -9,11 +9,11 @@ const cardStyles = {
     flexWrap: 'wrap',
     backgroundRepeat: 'repeat-x',
   },
-  sizeCard: {
+  card: {
     width: "auto",
     height: "auto",
     color: "#ffffff",
-    marginRight: "31",  
+    marginRight: "31px",  
   },
   imgCard: {
     width: "264px",
@@ -28,7 +28,7 @@ const cardStyles = {
     margin: "0 0 16px",
     textTransform: "uppercase",
     color: "#222222",
-    fontSize: "small",
+    fontSize: "15px",
   },
   underline: {
     width: '38px',
@@ -58,4 +58,4 @@ const cardStyles = {
   },
 };
 
-export default cardStyles;
+export default CardsStyles;
