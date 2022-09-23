@@ -10,7 +10,7 @@ const CardsStyles = {
     backgroundRepeat: 'repeat-x',
   },
   card: {
-    width: "auto",
+    width: "264px",
     height: "auto",
     color: "#ffffff",
     marginRight: "31px",  
