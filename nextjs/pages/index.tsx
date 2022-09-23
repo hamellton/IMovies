@@ -1,15 +1,42 @@
-export default function IndexPage() {
-  return (
-    <div variant="container" textAlign="center" py="20">
-      <h1 variant="heading.h1">
-        Welcome to <span color="primary">Reflexjs</span>
-      </h1>
-      <p fontSize="xl" my="4">
-        Get started by editing <code variant="text.code">pages/index.jsx</code>
-      </p>
-      <a href="https://reflexjs.org/docs" variant="button.primary">
-        Read the docs
-      </a>
-    </div>
-  )
+import React from "react";
+import Card from "../src/components/Card";
+import { ICard } from "../src/components/Card/Card.type";
+import { CARDS, TITLE } from "../src/components/Card/HomePage.constans";
+
+interface IHomePage {
+  title: string
+  cards: ICard[]
 }
+
+function IndexPage(props: IHomePage): JSX.Element {
+  const { title, cards } = props
+  
+  return (
+      <div variant="container">
+          <h1
+            variant="heading.h3 underline.center underline.noMargin underline.thick"
+            my={0}
+            color="black"
+            textTransform="uppercase"
+            textAlign="center"
+          >
+            {title}
+          </h1>
+        
+        <div variant="card.cardsBlock">
+          {Card.length > 0 && cards.map((el: ICard) => <Card card={el} />)}
+        </div>
+      </div>
+  );
+}
+
+export const getStaticProps = (context) => {
+  return {
+    props: {
+      title: TITLE,
+      cards: CARDS,
+    },
+  };
+};
+
+export default IndexPage;
