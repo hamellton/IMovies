@@ -21,6 +21,8 @@ mongoose.connect(databaseConfig, {
   useUnifiedTopology: true,
 });
 
+const test
+
 //Checking the connection to db
 var db = mongoose.connection;
 db.once("open", () => console.log("Mongo Database is connected now!"));
