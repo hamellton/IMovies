@@ -10,8 +10,18 @@ const userRoute = require("./routes/users");
 
 const app = express();
 
-//To prevent CORS errors
+// Middleware for enabling CORS
 app.use(cors());
+
+// Middleware
+app.use(express.static("uploads"));
+app.use(bodyParser.urlencoded({ extended: true, limit: "10mb" }));
+app.use(bodyParser.json({ limit: "10mb" }));
+
+app.use((req, res, next) => {
+  console.log(`Received ${req.method} request for ${req.url}`);
+  next();
+});
 
 //Connecting mongoDB
 const databaseConfig = require("./config/keys");
@@ -22,7 +32,7 @@ mongoose.connect(databaseConfig, {
 });
 
 //Checking the connection to db
-var db = mongoose.connection;
+const db = mongoose.connection;
 db.once("open", () => console.log("Mongo Database is connected now!"));
 db.on("error", console.error.bind(console, "connection error:"));
 
@@ -40,7 +50,6 @@ app.use("/api/users", userRoute);
 
 //Serve our static asset
 app.use(express.static("frontend/build"));
-
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 });

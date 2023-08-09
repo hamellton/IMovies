@@ -5,12 +5,12 @@ const fs = require("fs");
 
 exports.getAllMovies = (req, res) => {
   Movie.find()
-    .then((movies) =>
-      res.status(200).json({
-        count: movies.length,
-        movies: movies,
-      })
-    )
+    .then((movies) => {
+      return res.status(200).json({
+        	count: movies.length,
+        	movies: movies,
+      	})
+    })
     .catch((err) => res.status(500).json({ error: err }));
 };
 
